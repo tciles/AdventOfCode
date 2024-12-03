@@ -2,31 +2,12 @@ package Solver.Year2024;
 
 import java.util.*;
 
-import Solver.ISolver;
+import Solver.Solver;
 
-public class SolverYear2024Day1 implements ISolver {
-    private final int year;
-
-    private final int day;
-
+public class SolverYear2024Day1 extends Solver {
     public SolverYear2024Day1() {
         year = 2024;
         day = 1;
-    }
-
-    @Override
-    public int getYear() {
-        return year;
-    }
-
-    @Override
-    public int getDay() {
-        return day;
-    }
-
-    @Override
-    public String getFileName() {
-        return year + "_" + day + "_input.txt";
     }
 
     @Override

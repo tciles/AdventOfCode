@@ -1,14 +1,11 @@
 package Solver.Year2024;
 
-import Solver.ISolver;
+import Solver.Solver;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class SolverYear2024Day2 implements ISolver {
-    private final int year;
-    private final int day;
-
+public class SolverYear2024Day2 extends Solver {
     private enum DIRECTION {
         ASC,
         DESC
@@ -17,21 +14,6 @@ public class SolverYear2024Day2 implements ISolver {
     public SolverYear2024Day2() {
         year = 2024;
         day = 2;
-    }
-
-    @Override
-    public int getYear() {
-        return year;
-    }
-
-    @Override
-    public int getDay() {
-        return day;
-    }
-
-    @Override
-    public String getFileName() {
-        return year + "_" + day + "_input.txt";
     }
 
     @Override

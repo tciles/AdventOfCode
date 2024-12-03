@@ -1,41 +1,22 @@
 package Solver.Year2024;
 
-import Solver.ISolver;
+import Solver.Solver;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SolverYear2024Day3 implements ISolver {
-    private final int year;
-    private final int day;
-
+public class SolverYear2024Day3 extends Solver {
     public SolverYear2024Day3() {
         year = 2024;
         day = 3;
     }
 
     @Override
-    public int getYear() {
-        return year;
-    }
-
-    @Override
-    public int getDay() {
-        return day;
-    }
-
-    @Override
-    public String getFileName() {
-        return year + "_" + day + "_input.txt";
-    }
-
-    @Override
     public void run(List<String> lines) {
         String line = String.join("", lines);
         System.out.println("Answer 1 : " + answerOne(line));
-
 
         StringBuilder buffer = new StringBuilder();
         StringBuilder buffer2 = new StringBuilder();
@@ -55,7 +36,6 @@ public class SolverYear2024Day3 implements ISolver {
                 buffer.setLength(0);
                 buffer2.setLength(0);
                 add = false;
-
             }
 
             if (buffer.indexOf("do()") > -1) {

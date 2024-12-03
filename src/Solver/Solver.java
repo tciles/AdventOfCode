@@ -3,9 +3,8 @@ package Solver;
 import java.util.List;
 
 public class Solver implements ISolver {
-    private int year;
-
-    private int day;
+    protected int year;
+    protected int day;
 
     public Solver() {
         year = -1;
@@ -23,9 +22,8 @@ public class Solver implements ISolver {
     }
 
     @Override
-    public String getFileName()
-    {
-        return "";
+    public String getFileName() {
+        return year + "_" + day + "_input.txt";
     }
 
     @Override
