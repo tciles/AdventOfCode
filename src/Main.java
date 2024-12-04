@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Main {
     private final static int YEAR = 2024;
-    private final static int DAY = 3;
+    private final static int DAY = 4;
 
     public static void main(String[] args) {
         Main app = new Main();

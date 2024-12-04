@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import Solver.Year2024.SolverYear2024Day1;
 import Solver.Year2024.SolverYear2024Day2;
 import Solver.Year2024.SolverYear2024Day3;
+import Solver.Year2024.SolverYear2024Day4;
 
 public class SolverCollection {
     private ArrayList<ISolver> solvers;
@@ -31,6 +32,7 @@ public class SolverCollection {
         collection.addSolver(new SolverYear2024Day1());
         collection.addSolver(new SolverYear2024Day2());
         collection.addSolver(new SolverYear2024Day3());
+        collection.addSolver(new SolverYear2024Day4());
 
         return collection;
     }
